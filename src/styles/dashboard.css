@@ -1,20 +1,19 @@
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
 
- .dashboard-layout {
+.dashboard-content {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 440px) {
+  .dashboard-layout {
     display: flex;
-    height: 100vh; 
-    overflow: hidden;
+    flex-direction: column;
   }
-  
-  .dashboard-content {
-    flex: 1; 
-    overflow-x: hidden;
-    overflow-y: auto; 
-    background-color: #f8f9fa; 
-  }
-  
-  @media(max-width:440px){
-    .dashboard-layout{
-      display: flex;
-      flex-direction: column;
-    }
-  }
+}

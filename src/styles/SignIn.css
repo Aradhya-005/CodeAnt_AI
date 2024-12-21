@@ -1,4 +1,3 @@
-/* Updated SignIn.css */
 .auth-page {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -16,18 +15,12 @@
   background-color: #ffffff;
 }
 
-/* .illustration-image {
-  max-width: 480px;
-  height: auto;
-} */
-
-/* Main Stats Card */
-.stats-wrapper{
+.stats-wrapper {
   position: relative;
 }
 .stats-card {
   position: absolute;
-  top: 139px; 
+  top: 170px;
   left: 163px;
   box-shadow: 0px 4px 24px rgba(8, 23, 53, 0.24);
   border-radius: 24px;
@@ -36,7 +29,6 @@
   background-color: #fff;
 }
 
-/* Header Section */
 .stats-card-header {
   display: flex;
   flex-direction: row;
@@ -60,9 +52,7 @@
   color: #081735;
 }
 
-/* Stats Section */
 .stats-container {
-  
   display: flex;
   justify-content: space-between;
   padding: 20px 31px 26px 31px;
@@ -91,24 +81,22 @@
   color: #171717;
 }
 
-/* Issue Card */
 .stats-issue-card {
   gap: 16px;
   position: absolute;
-  left: 373px;
-  top: 299px;
+  top: 334px;
+  left: 372px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: #fff;
   border-radius: 24px;
-  padding:15px 31px;
+  padding: 15px 31px;
   box-shadow: 0px 4px 24px rgba(8, 23, 53, 0.24);
   width: 204px;
   height: 133.37px;
 }
 
-/* Issue Card Header */
 .stats-issue-header {
   display: flex;
   justify-content: space-between;
@@ -155,7 +143,6 @@
   align-items: center;
 }
 
-/* Issue Details */
 .stats-details {
   gap: 8px;
   display: flex;
@@ -204,7 +191,6 @@
   border: 1px solid #d5d7da;
   border-radius: 10px;
   background-color: #ffffff;
-
   text-align: center;
 }
 
@@ -235,7 +221,7 @@
   line-height: 48px;
   font-size: 32px;
   font-weight: 600;
-  color: #181D27;
+  color: #181d27;
 }
 
 .toggle-button-group {
@@ -330,14 +316,14 @@
   .brand-container {
     gap: 24px;
   }
-  .brand-section{
+  .brand-section {
     padding: 36px 16px;
   }
   .brand-container h1 {
     line-height: 48px;
-    font-size: 24px; 
+    font-size: 24px;
   }
-  .toggle-button-group{
+  .toggle-button-group {
     height: 52px;
     gap: 2px;
     border: 1px solid #d5d7da;
@@ -352,13 +338,13 @@
     max-width: 408px;
     height: 582.34px;
   }
-  .auth-action-button{
+  .auth-action-button {
     padding: 16px 12px;
   }
-  .auth-button-group{
+  .auth-button-group {
     padding: 18px 16px;
   }
-  .footer-text{
+  .footer-text {
     font-size: 14px;
     margin: 0;
   }
