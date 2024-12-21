@@ -3,7 +3,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .auth-illustration-section {
