@@ -52,7 +52,7 @@
     justify-content: center; 
     gap: 8px; 
     font-family: 'Inter',sans-serif;
-    padding: 10px 20px;
+    padding: 10px 14px;
     font-weight: 400;
     line-height: 20px;
     font-size: 14px;
@@ -94,14 +94,14 @@
     align-items: center; 
     border: 1px solid #D5D7DA; 
     border-radius: 8px;
-    padding: 12px 14px;
+    padding: 10px 14px;
     max-width: 366px; 
 }
 
 .search-icon {
-    width: 24px; 
-    height: 24px; 
-    margin-right: 10px; 
+    width: 17.98px; 
+    height: 18px; 
+    margin-right: 4px; 
 }
 
 .search-bar {
@@ -195,7 +195,7 @@
     }
     .repository-header{
         justify-content: flex-start;
-        margin: 20px 0;
+        padding: 20px 16px;
     }
     .repository-title{
         justify-content: flex-start;
@@ -205,6 +205,14 @@
         flex-direction: column;
     }
     .repo-meta{
+        font-size: 14px;
+        line-height: 20px;
         gap: 24px;
+    }
+    .repo-item{
+        padding: 16px;
+    }
+    .repo-name {
+        font-size: 18px;
     }
 }

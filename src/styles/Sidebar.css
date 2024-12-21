@@ -103,7 +103,7 @@
   height: 24px;
 }
 
-@media (max-width: 440px) {
+@media (min-width: 300px) and (max-width:600px) {
   .sidebar {
     display: none;
   }
@@ -119,6 +119,7 @@
     align-items: center;
   }
   .navbar {
+    border: 1px solid #E9EAEB;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -127,7 +128,6 @@
     width:-webkit-fill-available;
     background-color: #FFFFFF;
     padding: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .navbar .nav-link {
