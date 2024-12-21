@@ -3,7 +3,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   display: flex;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .auth-illustration-section {
@@ -323,13 +323,43 @@
   cursor: pointer;
 }
 
-@media (max-width: 440px) {
+@media (min-width: 300px) and (max-width: 600px) {
   .auth-illustration-section {
     display: none;
   }
-}
-@media (max-width: 600px) {
-  .auth-illustration-section {
-    display: none;
+  .brand-container {
+    gap: 24px;
+  }
+  .brand-section{
+    padding: 36px 16px;
+  }
+  .brand-container h1 {
+    line-height: 48px;
+    font-size: 24px; 
+  }
+  .toggle-button-group{
+    height: 52px;
+    gap: 2px;
+    border: 1px solid #d5d7da;
+    border-radius: 8px;
+  }
+  .toggle-button {
+    padding: 12px 14px;
+    border-radius: 8px;
+  }
+  .auth-options-container {
+    width: 100%;
+    max-width: 408px;
+    height: 582.34px;
+  }
+  .auth-action-button{
+    padding: 16px 12px;
+  }
+  .auth-button-group{
+    padding: 18px 16px;
+  }
+  .footer-text{
+    font-size: 14px;
+    margin: 0;
   }
 }
