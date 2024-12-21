@@ -1,0 +1,330 @@
+/* Updated SignIn.css */
+.auth-page {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.auth-illustration-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: #ffffff;
+}
+
+/* .illustration-image {
+  max-width: 480px;
+  height: auto;
+} */
+
+/* Main Stats Card */
+.stats-wrapper{
+  position: relative;
+}
+.stats-card {
+  position: absolute;
+  top: 139px; 
+  left: 163px;
+  box-shadow: 0px 4px 24px rgba(8, 23, 53, 0.24);
+  border-radius: 24px;
+  width: 447px;
+  height: 170px;
+  background-color: #fff;
+}
+
+/* Header Section */
+.stats-card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 16px 20px; */
+  gap: 10px;
+  border-bottom: 1px solid #e6e8f0;
+}
+
+.stats-card-header img {
+  width: 28px;
+  height: 31px;
+}
+
+.stats-card-header p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #081735;
+}
+
+/* Stats Section */
+.stats-container {
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.stat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-block p:first-child {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #081735;
+}
+
+.stat-block p:last-child {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6b7b8c;
+}
+
+/* Issue Card */
+.stats-issue-card {
+  position: absolute;
+  left: 327px;
+  top: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0px 4px 24px rgba(8, 23, 53, 0.24);
+  width: 265px;
+  height: 164px;
+}
+
+/* Issue Card Header */
+.stats-issue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  /* padding-bottom: 10px; */
+}
+
+.stats-issue-header img {
+  width: 56px;
+  height: 56.77px;
+}
+
+.stats-percentage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.stats-percentage img {
+  width: 10.33px;
+  height: 8px;
+}
+
+.stats-percentage .stats-percentage-count p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #0049c6;
+  line-height: 20px;
+}
+
+.stats-percentage p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #171717;
+}
+.stats-percentage-count {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Issue Details */
+.stats-details {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-details p:first-child {
+  margin: 0;
+  font-size: 14px;
+  color: #171717;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.stats-details p:last-child {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  color: #081735;
+  line-height: 32px;
+}
+
+.overlay-logo {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  width: 280px;
+  height: auto;
+}
+
+.auth-options-wrapper {
+  background-color: #fafafa;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-options-container {
+  width: 100%;
+  max-width: 672px;
+  height: 602.34px;
+  border: 1px solid #d5d7da;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  text-align: center;
+}
+
+.brand-section {
+  padding: 36px 24px;
+  border-bottom: 1px solid #d5d7da;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.brand-logo {
+  width: 200px;
+  height: auto;
+}
+
+.brand-container h1 {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.toggle-button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d5d7da;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 624px;
+  height: 60px;
+}
+
+.toggle-button {
+  border: 2px solid #d5d7da;
+  flex: 1;
+  border-radius: 8px;
+  padding: 16px 14px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #1570ef;
+  color: #ffffff;
+}
+
+.toggle-button:hover:not(.active) {
+  background-color: #f1f1f1;
+}
+
+.auth-button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  padding: 24px;
+}
+
+.auth-action-button {
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #d8dae5;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.auth-action-button:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.03);
+}
+
+.auth-provider-icon {
+  width: 25px;
+  height: 25.59px;
+}
+
+.footer-text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #181d27;
+  align-items: center;
+}
+
+.footer-text span {
+  font-weight: 700;
+  color: #181d27;
+  cursor: pointer;
+}
+
+@media (max-width: 440px) {
+  .auth-illustration-section {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .auth-illustration-section {
+    display: none;
+  }
+}

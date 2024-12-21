@@ -1,0 +1,153 @@
+.sidebar {
+  width: 242px;
+  gap: 16px;
+  background-color: #FFFFFF;
+  padding: 24px 16px;
+  border-right: 1px solid #E9EAEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 161.5px;
+  height: 32px;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.user-profile {
+  width: 100%;
+  max-width: 202px;
+  height: 40px;
+  padding: 10px 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #D5D7DA;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top-nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-nav-links {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  gap: 8px;
+  width: 210px;
+  height: 44px;
+  line-height: 24px;
+  padding: 0px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-link.active {
+  background-color: #1570EF;
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.menu-icon {
+  background: none;
+  display: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 440px) {
+  .sidebar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .small-screen-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width:-webkit-fill-available;
+    background-color: #FFFFFF;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar .nav-link {
+    width: auto;
+    height: 24px;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+
+  .nav-menu {
+    
+    flex-direction: column;
+    display: flex;
+    align-items:self-start;
+    gap: 0;
+  }
+
+  .nav-header {
+    display: none; /* Hide header on small screens */
+  }
+  .nav-list{
+    padding: 24px 0 0 0;
+    gap: 12px;
+  }
+}

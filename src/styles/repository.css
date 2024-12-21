@@ -1,0 +1,227 @@
+/* Ensure the outer container has proper padding */
+.repos-container-outer {
+    width: 100%; /* Make the width flexible */
+    padding: 24px; /* Add padding to maintain spacing */
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+/* Style the repository container */
+.repository-container {
+    width: 100%; /* Adjust width to be responsive */
+    margin: 0 auto; /* Center the container */
+    border: 1px solid #E9EAEB;
+    border-radius: 12px;
+    background-color: #fff; /* Ensure contrast */
+}
+.repository-header{
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #D5D7DA;
+    gap: 16px;
+}
+.dashboard-container {
+    display: flex;
+    flex-direction: column; /* Adjust layout for smaller screens */
+    height: auto; /* Adjust height for content */
+    background-color: #f5f5f5;
+}
+
+.dashboard-main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard-header h1{
+    line-height: 32px;
+}
+.dashboard-header  p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #414651;
+    margin: 0;
+}
+.dashboard-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dashboard-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}
+
+.refresh-button, 
+.add-repo-button {
+    display: flex; /* Enables flexbox for content alignment */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    gap: 8px; /* Space between icon and text */
+    padding: 10px 20px;
+    font-size: 16px; /* Adjusts text size for consistency */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.refresh-button {
+    color: black;
+    border: 1px solid #666;
+    background-color: transparent;
+}
+
+.add-repo-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.add-repo-button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+button img {
+    width: 16px; /* Adjust icon size */
+    height: 16px; /* Adjust icon size */
+}
+
+
+
+.add-repo-button:hover {
+    background-color: #0056b3;
+}
+
+.search-container {
+    display: flex; /* Enables flexbox for horizontal alignment */
+    align-items: center; /* Vertically center icon and input */
+    border: 1px solid #D5D7DA; /* Border for the search bar */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 14px; /* Padding inside the container */
+    background-color: #fff; /* Optional: background color */
+    width: 100%; /* Full width or adjust as needed */
+    max-width: 366px; /* Optional: limit the width */
+   
+}
+
+.search-icon {
+    width: 17.98px; /* Icon size */
+    height: 18px; /* Icon size */
+    margin-right: 10px; /* Space between icon and input */
+    color: #666; /* Optional: icon color */
+}
+
+.search-bar {
+    flex: 1; /* Allows input to take the remaining space */
+    border: none; /* Remove default input border */
+    outline: none; /* Remove focus outline */
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 16px; /* Font size of input text */
+    padding: 5px; /* Padding inside the input field */
+}
+
+.repo-list {
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+}
+
+.repo-item {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    padding: 24px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.repo-item:hover {
+    background-color: #f9f9f9;
+}
+
+.repo-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.repo-details h3{
+    margin: 0;
+}
+.repo-name {
+    color: #181D27;
+    font-size: 20px;
+    font-weight:500;
+    line-height: 24px;
+}
+
+.repo-type {
+    padding: 2px 10px 2px 8px;
+    font-size: 14px;
+    color: #175CD3;
+    
+    background-color: #EFF8FF;
+    border-radius: 30px;
+    border: 1px solid #B2DDFF;
+}
+
+
+.repo-meta {
+    display: flex; /* Aligns the children horizontally */
+    gap: 40px; /* Gap between each span element */
+    font-size: 16px; /* Font size for the text */
+    color: #181D27; /* Text color */
+    align-items: center; /* Vertically aligns icons with text */
+}
+
+.repo-meta span {
+    display: flex; /* Aligns text and icon horizontally */
+    align-items: center; /* Vertically centers the icon and text */
+    gap: 8px; /* Gap between the icon and text */
+}
+
+.repo-meta img {
+    object-fit: contain; /* Ensures the icon is properly scaled */
+    vertical-align: middle; /* Align icon vertically with text */
+}
+.repo-size img{
+    width: 10.5px;
+    height: 12px;
+}
+.repo-language img{
+    width: 8px;
+    height: 8px;
+}
+
+@media(max-width:440px){
+    .repos-container-outer {
+        justify-content: flex-start;
+        margin-top: 68px;
+        padding: 0;
+    }
+    .repository-header{
+        justify-content: flex-start; /* Align items to the left */
+        margin: 20px 0;
+    }
+    .dashboard-header{
+        justify-content: flex-start;
+        align-items:flex-start ;
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .repo-meta{
+        gap: 24px;
+    }
+}
