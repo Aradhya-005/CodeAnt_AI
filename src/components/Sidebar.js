@@ -11,7 +11,7 @@ import PhoneIcon from "../assets/phoneIcon.svg";
 import BookIcon from "../assets/BookIcon.svg";
 import MenuIcon from "../assets/MenuIcon.svg";
 import CloseIcon from "../assets/closeIcon.svg";
-import DropDown from '../assets/dropdownIcon.svg'
+import DropDown from "../assets/dropdownIcon.svg";
 
 const Sidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ const Sidebar = () => {
   }, []);
 
   return isSmallScreen ? (
-    <div className="navbar">
+    <div className="responsive-navbar">
       <div className="small-screen-navbar">
         <div>
           <img src={logo} alt="logo with text" className="logo" />
@@ -41,49 +41,62 @@ const Sidebar = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div className="nav-list">
-        <div>
-          <button className="user-profile">
-            Aradhya Yadav <img src= {DropDown} alt="dropdown icon "/>
-          </button>
-        </div>
-         <div className="nav-menu modal">
-           <NavLink to="/dashboard/repo" className="nav-link">
-             <img src={HomeIcon} alt="Home" />
-             Repositories
-           </NavLink>
-           <NavLink to="/dashboard/ai-review" className="nav-link">
-             <img src={CodeIcon} alt="AI Review" />
-             AI Code Review
-           </NavLink>
-           <NavLink to="/dashboard/cloud-security" className="nav-link">
-             <img src={CloudIcon} alt="Cloud Security" />
-             Cloud Security
-           </NavLink>
-           <NavLink to="/dashboard/how-to-use" className="nav-link">
-             <img src={BookIcon} alt="How to Use" />
-             How to Use
-           </NavLink>
-           <NavLink to="/dashboard/settings" className="nav-link">
-             <img src={SettingsIcon} alt="Settings" />
-             Settings
-           </NavLink>
-           <NavLink to="/dashboard/support" className="nav-link">
-             <img src={PhoneIcon} alt="Support" />
-             Support
-           </NavLink>
-           <NavLink to="/dashboard/logout" className="nav-link">
-             <img src={SignOutIcon} alt="Logout" />
-             Logout
-           </NavLink>
-         </div>
-     </div>
+        <>
+          <div className="overlay" onClick={toggleMenu}></div>
+          <div className="nav-menu">
+            <div className="small-screen-navbar">
+              <div>
+                <img src={logo} alt="logo with text" className="logo" />
+              </div>
+              <div>
+                <button className="menu-icon" onClick={toggleMenu}>
+                  <img
+                    src={isMenuOpen ? CloseIcon : MenuIcon}
+                    alt="Menu Toggle"
+                  />
+                </button>
+              </div>
+            </div>
+            <button className="user-profile">
+              Aradhya Yadav <img src={DropDown} alt="dropdown icon" />
+            </button>
+            <nav>
+              <NavLink to="/dashboard/repo" className="nav-link">
+                <img src={HomeIcon} alt="Home" />
+                Repositories
+              </NavLink>
+              <NavLink to="/dashboard/ai-review" className="nav-link">
+                <img src={CodeIcon} alt="AI Review" />
+                AI Code Review
+              </NavLink>
+              <NavLink to="/dashboard/cloud-security" className="nav-link">
+                <img src={CloudIcon} alt="Cloud Security" />
+                Cloud Security
+              </NavLink>
+              <NavLink to="/dashboard/how-to-use" className="nav-link">
+                <img src={BookIcon} alt="How to Use" />
+                How to Use
+              </NavLink>
+              <NavLink to="/dashboard/settings" className="nav-link">
+                <img src={SettingsIcon} alt="Settings" />
+                Settings
+              </NavLink>
+              <NavLink to="/dashboard/support" className="nav-link">
+                <img src={PhoneIcon} alt="Support" />
+                Support
+              </NavLink>
+              <NavLink to="/dashboard/logout" className="nav-link">
+                <img src={SignOutIcon} alt="Logout" />
+                Logout
+              </NavLink>
+            </nav>
+          </div>
+        </>
       )}
     </div>
-   
   ) : (
     <div className={`sidebar ${isMenuOpen ? "menu-open" : ""}`}>
-      <div className="nav-header">
+      <div className="sidebar-header">
         <div className="toggle-menu">
           <div>
             <img src={logo} alt="logo with text" className="logo" />
@@ -98,7 +111,8 @@ const Sidebar = () => {
         </div>
         <div>
           <button className="user-profile">
-          UtkarshDhairyaPan..<img src= {DropDown} alt="dropdown icon "/>
+            UtkarshDhairyaPan..
+            <img src={DropDown} alt="dropdown icon " />
           </button>
         </div>
       </div>
