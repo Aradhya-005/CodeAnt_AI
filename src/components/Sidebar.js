@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { FaChevronDown } from "react-icons/fa";
 import "../styles/Sidebar.css";
 import logo from "../assets/LogoWithText.svg";
 import HomeIcon from "../assets/HomeIcon.svg";
@@ -12,6 +11,7 @@ import PhoneIcon from "../assets/phoneIcon.svg";
 import BookIcon from "../assets/BookIcon.svg";
 import MenuIcon from "../assets/MenuIcon.svg";
 import CloseIcon from "../assets/closeIcon.svg";
+import DropDown from '../assets/dropdownIcon.svg'
 
 const Sidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +44,7 @@ const Sidebar = () => {
         <div className="nav-list">
         <div>
           <button className="user-profile">
-            Aradhya Yadav <FaChevronDown />
+            Aradhya Yadav <img src= {DropDown} alt="dropdown icon "/>
           </button>
         </div>
          <div className="nav-menu modal">
@@ -98,7 +98,7 @@ const Sidebar = () => {
         </div>
         <div>
           <button className="user-profile">
-            Aradhya Yadav <FaChevronDown />
+          UtkarshDhairyaPan..<img src= {DropDown} alt="dropdown icon "/>
           </button>
         </div>
       </div>

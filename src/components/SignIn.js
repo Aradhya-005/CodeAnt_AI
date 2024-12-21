@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/SignIn.css";
-import SignImg from "../assets/StatsImg.svg";
 import GithubIcon from "../assets/GithubIcon.svg";
 import GitLabIcon from "../assets/GitLabIcon.svg";
 import BitbucketIcon from "../assets/BitbucketIcon.svg";
@@ -15,16 +14,16 @@ import Arrow from "../assets/ArrowUp.svg";
 
 function SignIn() {
   const [isSAAS, setIsSAAS] = useState(true);
+  const navigate = useNavigate();
+
+  const handleSignIn = () => {
+    navigate("/dashboard/repo");
+  };
 
   return (
     <div className="auth-page">
       {/* Left Section: Illustration */}
       <section className="auth-illustration-section">
-        {/* <img
-          src={SignImg}
-          alt="Illustration showing CodeAnt AI capabilities"
-          className="illustration-image"
-        /> */}
         <div className="stats-wrapper">
           <div className="stats-card">
             <div className="stats-card-header">
@@ -54,13 +53,13 @@ function SignIn() {
                 className="stats-icon"
               />
               <div className="stats-percentage">
-                <div className="stats-percentage-count" >
-                <img src={Arrow} alt="Upwards Arrow" className="arrow-icon" />
+                <div className="stats-percentage-count">
+                  <img src={Arrow} alt="Upwards Arrow" className="arrow-icon" />
                   <p className="percentage-text">14%</p>
                 </div>
-                 <div>
-                 <p className="week-text">This week</p>
-                 </div>
+                <div>
+                  <p className="week-text">This week</p>
+                </div>
               </div>
             </div>
             <div className="stats-details">
@@ -70,17 +69,13 @@ function SignIn() {
           </div>
         </div>
         <div>
-          <img
-            src={GreyLogo}
-            alt="Company Grey Logo"
-            className="overlay-logo"
-          />
+          <img src={GreyLogo} alt="Company Grey Logo" className="overlay-logo" />
         </div>
       </section>
 
       {/* Right Section: Sign-in Options */}
       <section className="auth-options-wrapper">
-        <article className="auth-options-container">
+        <div className="auth-options-container">
           {/* Branding Section */}
           <div className="brand-section">
             <div className="brand-container">
@@ -111,7 +106,7 @@ function SignIn() {
           <div className="auth-button-group">
             {isSAAS ? (
               <>
-                <button className="auth-action-button">
+                <button className="auth-action-button" onClick={handleSignIn}>
                   <img
                     src={GithubIcon}
                     alt="GitHub logo"
@@ -119,7 +114,7 @@ function SignIn() {
                   />
                   Sign in with GitHub
                 </button>
-                <button className="auth-action-button">
+                <button className="auth-action-button" onClick={handleSignIn}>
                   <img
                     src={BitbucketIcon}
                     alt="Bitbucket logo"
@@ -127,7 +122,7 @@ function SignIn() {
                   />
                   Sign in with Bitbucket
                 </button>
-                <button className="auth-action-button">
+                <button className="auth-action-button" onClick={handleSignIn}>
                   <img
                     src={AzureIcon}
                     alt="Azure DevOps logo"
@@ -135,7 +130,7 @@ function SignIn() {
                   />
                   Sign in with Azure DevOps
                 </button>
-                <button className="auth-action-button">
+                <button className="auth-action-button" onClick={handleSignIn}>
                   <img
                     src={GitLabIcon}
                     alt="GitLab logo"
@@ -146,7 +141,7 @@ function SignIn() {
               </>
             ) : (
               <>
-                <button className="auth-action-button">
+                <button className="auth-action-button" onClick={handleSignIn}>
                   <img
                     src={GitLabIcon}
                     alt="GitLab logo"
@@ -154,7 +149,7 @@ function SignIn() {
                   />
                   Self-Hosted GitLab
                 </button>
-                <button className="auth-action-button">
+                <button className="auth-action-button" onClick={handleSignIn}>
                   <img
                     src={KeyIcon}
                     alt="SSO key logo"
@@ -165,10 +160,7 @@ function SignIn() {
               </>
             )}
           </div>
-        </article>
-        <Link to="/dashboard/repo" className="dashboard-link">
-          Move to Dashboard
-        </Link>
+        </div>
         <p className="footer-text">
           By signing up, you agree to the <span>Privacy Policy</span>.
         </p>

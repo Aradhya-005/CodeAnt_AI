@@ -41,6 +41,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 26px 31px 20px 31px;
   /* padding: 16px 20px; */
   gap: 10px;
   border-bottom: 1px solid #e6e8f0;
@@ -52,6 +53,7 @@
 }
 
 .stats-card-header p {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -63,7 +65,7 @@
   
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 31px 26px 31px;
   gap: 20px;
 }
 
@@ -86,23 +88,24 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #6b7b8c;
+  color: #171717;
 }
 
 /* Issue Card */
 .stats-issue-card {
+  gap: 16px;
   position: absolute;
-  left: 327px;
-  top: 290px;
+  left: 373px;
+  top: 299px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: #fff;
   border-radius: 24px;
-  padding: 20px;
+  padding:15px 31px;
   box-shadow: 0px 4px 24px rgba(8, 23, 53, 0.24);
-  width: 265px;
-  height: 164px;
+  width: 204px;
+  height: 133.37px;
 }
 
 /* Issue Card Header */
@@ -127,8 +130,8 @@
 }
 
 .stats-percentage img {
-  width: 10.33px;
-  height: 8px;
+  width: 24.33px;
+  height: 24px;
 }
 
 .stats-percentage .stats-percentage-count p {
@@ -139,6 +142,7 @@
 }
 
 .stats-percentage p {
+  font-weight: 400;
   margin: 0;
   font-size: 12px;
   line-height: 16px;
@@ -178,8 +182,8 @@
   position: absolute;
   bottom: 1px;
   left: 1px;
-  width: 280px;
-  height: auto;
+  width: 284px;
+  height: 319px;
 }
 
 .auth-options-wrapper {
@@ -190,6 +194,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  gap: 32px;
 }
 
 .auth-options-container {
@@ -227,9 +232,10 @@
 .brand-container h1 {
   font-family: "Inter", sans-serif;
   margin: 0;
-  font-size: 28px;
+  line-height: 48px;
+  font-size: 32px;
   font-weight: 600;
-  color: #333333;
+  color: #181D27;
 }
 
 .toggle-button-group {
@@ -245,7 +251,6 @@
 }
 
 .toggle-button {
-  border: 2px solid #d5d7da;
   flex: 1;
   border-radius: 8px;
   padding: 16px 14px;

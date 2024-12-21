@@ -1,17 +1,14 @@
 
  .dashboard-layout {
     display: flex;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh; 
     overflow: hidden;
   }
   
-  /* Sidebar styling */
- 
-  /* Content area styling */
   .dashboard-content {
-    flex: 1; /* Take up the remaining space */
-    overflow-y: auto; /* Allow vertical scrolling if content overflows */
-    background-color: #f8f9fa; /* Light background for contrast */
+    flex: 1; 
+    overflow-y: auto; 
+    background-color: #f8f9fa; 
   }
   
   @media(max-width:440px){
