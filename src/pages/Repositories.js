@@ -59,15 +59,15 @@ function Repositories() {
   ];
   return (
     <>
-      <section className="repos-container-outer">
+      <section className="repositories-wrapper">
         <div className="repository-container">
          <div className="repository-header">
-         <div className="dashboard-header">
+         <div className="repository-title">
             <div>
               <h1 className="dashboard-heading">Repositories</h1>
               <p>33 total repositories</p>
             </div>
-            <div className="dashboard-buttons">
+            <div className="cta-buttons">
               <button className="refresh-button ">
                 <img src={RefreshIcon} alt="refresh icon" />
                 Refresh All
