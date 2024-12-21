@@ -14,9 +14,13 @@ import CloseIcon from "../assets/closeIcon.svg";
 import DropDown from "../assets/dropdownIcon.svg";
 
 const Sidebar = () => {
+  // using useState to check if menu is open or not 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // using useState to check if window screen is less than or equal to 440px
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 440);
 
+  // created a function to toggle the nav menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };

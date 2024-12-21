@@ -4,8 +4,12 @@ import RefreshIcon from "../assets/refreshIcon.svg";
 import PlusIcon from "../assets/plusIcon.svg";
 import SearchIcon from "../assets/search.svg";
 import DatabaseIcon from '../assets/databaseIcon.svg';
-import Ellipse from '../assets/Ellipse.svg'
+import Ellipse from '../assets/Ellipse.svg';
+
+
 function Repositories() {
+
+  // stored list of repos in an array
   const repositories = [
     {
       name: "design-system",
@@ -88,6 +92,7 @@ function Repositories() {
          </div>
 
           <ul className="repo-list">
+            {/* fetching the repos by using map function */}
             {repositories.map((repo, index) => (
               <li key={index} className="repo-item">
                 <div className="repo-details">
