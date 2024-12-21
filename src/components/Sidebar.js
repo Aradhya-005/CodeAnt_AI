@@ -58,7 +58,7 @@ const Sidebar = () => {
               </div>
             </div>
             <button className="user-profile">
-              Aradhya Yadav <img src={DropDown} alt="dropdown icon" />
+            UtkarshDhairyaPanwar <img src={DropDown} alt="dropdown icon" />
             </button>
             <nav>
               <NavLink to="/dashboard/repo" className="nav-link">
@@ -111,7 +111,7 @@ const Sidebar = () => {
         </div>
         <div>
           <button className="user-profile">
-            UtkarshDhairyaPan..
+            UtkarshDhairyaPan...
             <img src={DropDown} alt="dropdown icon " />
           </button>
         </div>
