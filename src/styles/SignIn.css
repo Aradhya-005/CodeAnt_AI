@@ -22,7 +22,7 @@
   position: absolute;
   top: 170px;
   left: 163px;
-  box-shadow: 0px 4px 24px rgba(8, 23, 53, 0.24);
+  box-shadow: 0px 4px 24px #08173529;
   border-radius: 24px;
   width: 447px;
   height: 170px;
@@ -92,7 +92,7 @@
   background-color: #fff;
   border-radius: 24px;
   padding: 15px 31px;
-  box-shadow: 0px 4px 24px rgba(8, 23, 53, 0.24);
+  box-shadow: 0px 4px 24px #08173529;
   width: 204px;
   height: 133.37px;
 }
